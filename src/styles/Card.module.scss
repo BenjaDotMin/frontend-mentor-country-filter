@@ -1,0 +1,17 @@
+@import "../styles/_colors.scss";
+@import "../styles/_mixins.scss";
+
+.container{background-color: white; border-radius: 6px; overflow: hidden; box-shadow: 0 0 8px rgb(43 57 69 / 8%);
+    .image{height: 160px;
+        img{height: 100%; width: 100%; object-fit: cover;}
+    }
+
+    .cardDetails{padding: 25px 25px 44px 25px;
+        label{font-size: 1.8rem; font-weight: 800; cursor: pointer;}
+        ul{display: grid; gap: 6px; margin-top: 17px;
+            li{font-size: 1.3rem; letter-spacing: 0.03rem; font-weight: 600;
+                b{font-weight: 800;}
+            }
+        }
+    }
+}

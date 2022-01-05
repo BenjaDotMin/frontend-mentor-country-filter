@@ -1,0 +1,15 @@
+@import "../styles/_colors.scss";
+@import "../styles/_mixins.scss";
+
+.container{background-color: white; padding: 0 0 0 32px; height: 100%; flex: 0 1 480px; box-shadow: 0 2px 8px rgb(43 57 69 / 8%); border-radius: 6px;
+    i{font-size: 1.6rem; color: $darkGray;}
+    input{border:none; border-radius: 6px; padding: 1px 0 0 26px; height: 100%; font-size: 1.4rem; color: $veryDarkBlue; width: calc(100% - 20px); text-transform: capitalize;
+        &:focus-visible{outline: none;}
+        &::-webkit-input-placeholder{color: $darkGray;}
+        &::-moz-placeholder {color: $darkGray;}
+        &:-ms-input-placeholder{color: $darkGray;}
+        &:-moz-placeholder{color: $darkGray;}
+    }
+    @media(max-width:800px){flex: 0 1 330px;}
+    @media(max-width:615px){flex: none; height: 57px; width: 100%;}
+}  

@@ -1,0 +1,14 @@
+.container{padding-bottom: 80px;
+    .pageControls{display: flex; align-items: center; justify-content: space-between; height: 57px; margin-top: 47px;
+        @media(max-width:615px){flex-direction: column; justify-content: flex-start; align-items: flex-start; gap:40px; height: auto;}
+    }
+    .countryCards{display: grid; grid-template-columns: repeat(4, 1fr); gap:7.5rem; margin-top: 48px;       
+        @media(max-width:1170px){gap:20px;}
+        @media(max-width:920px){grid-template-columns: repeat(3, 1fr);}
+        @media(max-width:760px){grid-template-columns: repeat(2, 1fr);}
+        @media(max-width:520px){grid-template-columns: 1fr;}
+    }
+    .noCountries{font-size: 2rem; font-weight: 600; color: #858585;
+        @media(max-width:520px){font-size: 1.6rem;}
+    }
+}
